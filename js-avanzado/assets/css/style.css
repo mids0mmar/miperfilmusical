@@ -1,0 +1,260 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, #042350, #121c49, #1a1441, #1f0b39, #230030);
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+
+    /* a{
+        color: white;
+        text-decoration: none;
+    } */
+    h1{
+        font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+    }
+    h2,h3,h4,h5,p, a{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        color: white;
+
+ 
+
+    }
+    h4{
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+
+}
+.container-fluid {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.row {
+    max-width: 100%;
+}
+
+.contenedor-panel{
+    background-color: #010101;
+
+}
+.img-perfil{
+    border-radius: 50%;
+    max-width: 100px !important;
+    height: auto;
+}
+    .container-escuchados-recientemente{
+        border-radius: 20px;
+        border: 1px solid #3BE476;
+        
+        color: #fbfbfb;
+
+    }
+
+#album-description {
+    padding: 5px;
+}
+
+.imagen-artista{
+    width: 200px;
+    height:auto;
+}
+.card-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .card-carousel .my-card {
+    height: 21rem;
+    width: 14rem;
+    position: relative;
+    z-index: 1;
+    -webkit-transform: scale(0.6) translateY(-2rem);
+    transform: scale(0.6) translateY(-2rem);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    background: #30b940;
+    background-image: linear-gradient(to bottom, #1f9347, #27b450, #139a2e, #30b940, #35bc37);
+    transition: 1s;
+    padding: 10px;
+    border-radius: 10px;
+    a{
+        color: white;  
+        text-decoration: none;
+        
+    }
+    h4{
+        color: white !important;
+        font-weight: 600;
+    }
+    
+
+    
+  }
+  
+  .card-carousel .my-card:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,0.3);
+    bottom: -5rem;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+  
+  .card-carousel .my-card.active {
+    z-index: 3;
+    -webkit-transform: scale(1) translateY(0) translateX(0);
+    transform: scale(1) translateY(0) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s;
+  }
+  
+  .card-carousel .my-card.prev, .card-carousel .my-card.next {
+    z-index: 2;
+    -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+    transform: scale(0.8) translateY(-1rem) translateX(0);
+    opacity: 0.6;
+    pointer-events: auto;
+    transition: 1s;
+  }
+
+  .form-select{
+    border: 1px solid #30b940 !important;
+    background-color: #1F1F1F !important;
+    color: white !important;
+
+  }
+  .form-control{
+    border: 1px solid #30b940 !important;
+    background-color: #1F1F1F !important;
+    color: white;
+    
+
+  }
+  input#title.form-control::placeholder{
+  
+    color: white;
+  }
+  input#content.form-control::placeholder{
+  
+    color: white;
+  }
+.btn-primary{
+    background-color: #00a114 !important;
+    border: 0.5px solid #c4c4c4 !important;
+    font-weight: 300 !important;
+}
+.btn-primary:hover{
+    background: #003606 !important;
+    border: 1px solid #10791c;
+
+}
+.form-label{
+    color:white;
+}
+
+#tabla-albumes {
+   
+    td{
+        color:white;
+    }
+   
+}
+.tabla-acordeon{
+    thead{
+        th{
+            color: white !important;
+        }
+    }
+}
+
+#albumOffcanvas{
+   background-color:#010101;
+   ul{
+    background-color: #10791c;
+    li{
+        color: white; 
+        font-weight: 200;
+    }
+   }
+}
+
+#artistOffcanvas{
+    background-color:#010101;
+   
+        color: white; 
+        font-weight: 200;
+    
+}
+#playlistOffcanvas{
+    
+    background-image: linear-gradient(to bottom, #042350, #121c49, #1a1441, #1f0b39, #230030);
+    color: white; 
+    font-weight: 200;
+
+    .table{
+        --bs-table-bg: none;
+        td, th{
+            color: white;
+        }
+    }
+    
+
+}
+.accordion{
+   
+
+    --bs-accordion-bg: #1F1F1F !important;
+    --bs-accordion-btn-color: white !important;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e") !important;
+
+   .form-control{
+    color: white;
+   }
+   
+  
+    
+}
+
+
+.accordion {
+    ul{
+        li{
+            color: white;
+        }
+    }
+
+}
+.accordion-collapse {
+    max-height: 200px; /* Altura máxima para el contenido desplegado */
+    overflow-y: auto; /* Scroll vertical si el contenido excede el límite */
+}
+
+.accordion-body {
+    padding: 1rem;
+}
