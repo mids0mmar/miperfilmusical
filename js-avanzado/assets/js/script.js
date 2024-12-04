@@ -198,15 +198,15 @@ document.addEventListener('DOMContentLoaded', function () {
         const editForm = `
             <div>
                 <label for="edit-artist-title" class="form-label">Título</label>
-                <input type="text" id="edit-artist-title" class="form-control" value="${currentTitle}" />
+                <input type="text" style="color: white;" id="edit-artist-title" class="form-control" value="${currentTitle}" />
             </div>
             <div class="mt-3">
                 <label for="edit-artist-bio" class="form-label">Biografía</label>
-                <textarea id="edit-artist-bio" class="form-control" rows="5">${currentBio}</textarea>
+                <textarea id="edit-artist-bio" style="color: white;" class="form-control" rows="5">${currentBio}</textarea>
             </div>
             <div class="mt-3">
                 <label for="edit-artist-image" class="form-label">Imagen destacada</label>
-                <input type="file" id="edit-artist-image" class="form-control" />
+                <input type="file" style="color: white;" id="edit-artist-image" class="form-control" />
             </div>
             <div class="mt-3">
                 <button id="save-artist-btn" class="btn btn-success">Guardar</button>
